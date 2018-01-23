@@ -1,0 +1,65 @@
+::selection {
+  background: #fccc82 !important;
+}
+
+button.ant-btn.ant-btn-primary.ant-btn-lg,
+button.ant-btn.ant-btn-lg.plain {
+  padding: 0 50px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+button.ant-btn.ant-btn-lg.plain {
+  font-size: 14px;
+  background: none;
+  letter-spacing: 1px;
+  color: #ea8238;
+  font-weight: 500;
+}
+button.ant-btn.ant-btn-lg.plain[disabled] {
+  color: lightgray;
+}
+button.ant-btn.ant-btn-lg.plain.ant-btn-clicked:after {
+  border: none;
+}
+button.ant-btn.ant-btn-lg.plain i.anticon {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+button.ant-btn.ant-btn-lg.plain:hover {
+  transform: translateY(-1px);
+  text-shadow: 0 1px 1px #e2563650;
+}
+button.ant-btn.ant-btn-lg.plain:active {
+  transform: translateY(1px);
+  text-shadow: 0 0 1px #e2563650;
+  color: #f59755;
+}
+
+button.ant-btn.ant-btn-primary.ant-btn-lg[disabled] {
+  filter: grayscale(30%);
+  color: #ae3f20;
+}
+button.ant-btn.ant-btn-primary.ant-btn-lg {
+  background: linear-gradient(90deg, #ea8338, #e25736);
+  box-shadow: 0 5px 20px -8px #e25636, 0 8px 30px -10px #e25636, 0 30px 30px -19px rgba(226,86,54,0.28);
+}
+button.ant-btn.ant-btn-primary.ant-btn-lg:hover {
+  box-shadow: 0 5px 20px -8px #e25636, 0 8px 30px -10px #e25636;
+}
+button.ant-btn.ant-btn-primary.ant-btn-lg:active {
+  box-shadow: 0 5px 20px -8px #e25636;
+}
+button.ant-btn.ant-btn-primary.ant-btn-lg.ant-btn-clicked:after {
+  border: 0 solid #ea8238;
+}
+
+.ant-input:hover, .ant-input:focus {
+  border-color: #ea8238 !important;
+}
+.ant-input:focus {
+  box-shadow: 0 0 0 2px #ff6b1833 !important;
+}

@@ -1,0 +1,31 @@
+.menu-container {
+    background: white;
+}
+
+.ant-menu.ant-menu-light.ant-menu-root.ant-menu-horizontal {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 1690px;
+    margin: 0 auto;
+}
+.ant-menu-horizontal > .ant-menu-item-selected {
+    color: #e25836 !important;
+    border-bottom: 2px solid #ea8438 !important;
+}
+.ant-menu-horizontal > .ant-menu-item-active {
+    color: #ea8438 !important;
+    border-bottom: 2px solid #e25836 !important;
+}
+
+.ant-menu-horizontal .ant-menu-item:nth-child(1)::after {
+    content: "NEW";
+    position: absolute;
+    background: linear-gradient(90deg, #ea8238, #e25736);
+    color: white;
+    font-size: 11px;
+    line-height: 0;
+    padding: 7px;
+    border-radius: 25px;
+    right: -12px;
+    top: 9px;
+}

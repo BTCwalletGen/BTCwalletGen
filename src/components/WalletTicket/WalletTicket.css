@@ -1,0 +1,89 @@
+.wallet {
+    border: 2px solid rgb(148, 93, 26);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 600pt;
+    margin: 30pt auto;
+    border-radius: 20px;
+}
+.wallet .sidebar {
+    width: 105px;
+    min-width: 105px;
+    max-width: 105px;
+    background: #e66d37;
+    z-index: 1;
+    position: relative;
+}
+.wallet .sidebar::before {
+    content: url(../../assets/images/btcwalletgen.svg);
+    position: absolute;
+    transform: scale(2) rotateZ(-90deg);
+    transform-origin: left;
+    bottom: -10pt;
+    left: 50pt;
+}
+.wallet .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15pt 30pt 5pt 15pt;
+    position: relative;
+    z-index: 0;
+    border-radius: 0 20px 20px 0;
+}
+.wallet .content .QRs {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.wallet .content .QRs canvas {
+    width: 105pt !important;
+    height: 105pt !important;
+}
+.wallet .content::after {
+    content: "";
+    background-image: url(../../assets/images/btclogo.png);
+    position: absolute;
+    top: 110px;
+    left: -100px;
+    opacity: 0.125;
+    right: 0;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.wallet .content .QRs p {
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #e6771f;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 0.25pt;
+    font-weight: 600;
+}
+.wallet .content .QRs p:nth-of-type(1) {
+    transform-origin: top left;
+    left: 115pt;
+    top: 90pt;
+}
+.wallet .content .QRs p:nth-of-type(2) {
+    transform-origin: top right;
+    right: -12pt;
+    top: 9pt;
+}
+.wallet .content .addresses div {
+    text-align: left;
+    margin-top: 10pt;
+    z-index: 1;
+}
+.wallet .content .addresses div p {
+    margin: 0;
+}
+.wallet .content .addresses div p:nth-child(2) {
+    font-family: monospace;
+    font-size: 12pt;
+    letter-spacing: 0.25pt;
+}

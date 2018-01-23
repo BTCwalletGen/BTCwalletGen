@@ -1,0 +1,20 @@
+.header-container {
+    background: linear-gradient(90deg, #ea8438, #e25836) !important;
+    width: 100%;
+}
+
+.ant-layout-header {
+    background: linear-gradient(90deg, #ea8138, #e25936) !important;
+    padding: 0 10px !important;
+    margin: 0 auto;
+    max-width: 1700px;
+    width: 100%;
+}
+.logo {
+    max-width: 190px;
+    display: inline-block;
+    width: 190px;
+}
+.logo img {
+    width: 190px;
+}

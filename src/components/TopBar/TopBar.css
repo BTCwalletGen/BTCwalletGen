@@ -1,0 +1,14 @@
+@media screen and (min-width: 1150px) {
+    .topbar {
+        display: none !important;
+    }
+}
+
+.topbar {
+    display: block;
+    text-align: center;
+    background: rgb(133, 98, 226);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+}

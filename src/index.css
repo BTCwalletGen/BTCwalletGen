@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@media print {
+  body #root .ant-layout > *:not(.printable),
+  body #root .ant-layout > .printable > *:not(.printable),
+  body #root .ant-layout > .printable > .printable > .printable > div > *:not(.printable),
+  body #root .ant-layout > .printable > .printable > .printable > .printable > *:not(.printable) {
+    display: none;
+    /* border: 2px solid blue; */
+  }
+
+  body,
+  body #root,
+  body #root .ant-layout,
+  body #root .ant-layout > .printable,
+  body #root .ant-layout > .printable > .printable,
+  body #root .ant-layout > .printable > .printable > .printable,
+  body #root .ant-layout > .printable > .printable .box-container,
+  body #root .ant-layout > .printable > .printable > .printable > .printable {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none;
+  }
+
+  .wallet {
+    margin: 0cm !important;
+    max-width: 100%;
+    page-break-inside: avoid;
+    display: block;
+  }
+}

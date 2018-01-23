@@ -1,0 +1,44 @@
+div.grouper {
+    padding: 0 1.25rem;
+}
+p.tickerprice {
+    margin: 0px 1rem 0px 0px;
+    display: inline-block;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    text-shadow: 1px 1px #00000035;
+}
+.ant-select-open .ant-select-selection {
+    box-shadow: 0 0 0 2px rgb(234, 79, 9) !important;
+}
+.ant-select .ant-select-selection {
+    background: none;
+    border: 2px solid #ea8238;
+    color: white;
+}
+.ant-select .ant-select-selection:active {
+    box-shadow: 0 0 0 2px rgb(234, 79, 9) !important;
+}
+.ant-select .ant-select-selection .ant-select-arrow {
+    user-select: none;
+    color: #ffa769;
+    font-weight: bold;
+    text-shadow: 0px 1px #00000025;
+}
+.ant-select-dropdown-menu li.ant-select-droppdown-menu-item:hover {
+    background-color: #ffefe6 !important;
+}
+.ant-select-dropdown-menu li.ant-select-dropdown-menu-item-active {
+    background-color: #f8e0d3 !important;
+}
+.ant-select .ant-select-selection:hover {
+    border: 2px solid #ea8238 !important;
+}
+.ant-select.ant-select-enabled .ant-select-selection:focus {
+    border-color: #de4d18 !important;
+    box-shadow: 0 0 0 2px rgba(169, 60, 20, 0.2);
+}
+.ant-select.ant-select-open.ant-select-focused.ant-select-enabled .ant-select-selection {
+    border-color: #ca4210;
+}

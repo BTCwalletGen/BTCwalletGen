@@ -1,0 +1,71 @@
+.ant-layout-footer {
+    padding: 24px 10px !important;
+    background: white !important;
+    border-top: 4px solid #e66c37;
+    box-shadow: 0 -10px 50px -20px #ea823850;
+    margin-top: 2rem;
+}
+
+.ant-layout-footer a, .ant-layout-footer a:hover {
+    color: #ea8238;
+}
+.ant-layout-footer a:hover {
+    text-decoration: underline;
+}
+
+.logo2 {
+    width: 220px;
+    margin-left: -8px;
+}
+
+.firstSection p:nth-of-type(1) {
+    max-width: 320px;
+}
+.firstSection p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+.secondSection > *, .secondSection .donations > * {
+    margin: 5px 0 5px 30px;
+}
+.secondSection h2 {
+    margin: 10px 0 5px 35px;
+    color: #e25736;
+    font-size: 1.5rem;
+}
+.secondSection h2 i {
+    font-size: 2rem;
+    position: absolute;
+    margin: 3px 0 0 -38px;
+}
+.secondSection div.donations {
+    margin: 0;
+    opacity: 0.25;
+}
+.secondSection .donations h2 {
+    margin-top: 20px;
+}
+.secondSection p.donation-address {
+    margin-top: 8px;
+}
+.secondSection .donation-address a {
+    font-weight: 600;
+}
+.secondSection .donation-address a:hover {
+    /* text-decoration: underline; */
+}
+
+.thirdSection {
+    padding-top: 20px;
+}
+.thirdSection a {
+    display: block;
+}
+.thirdSection a.social {
+    font-size: 1.5rem;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+}
+.thirdSection a.social svg path {
+    fill: #ea8238;
+}
