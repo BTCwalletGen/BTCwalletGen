@@ -70,7 +70,7 @@ class Bip38Password extends Component {
                     }}
                 >
                     <Icon type="exclamation-circle"/>&nbsp;
-                    Keep it somewhere safe, you could lose all your bitcoins.
+                    Do not share it with anyone and keep it somewhere safe.
                 </p>
 
                 <Input
