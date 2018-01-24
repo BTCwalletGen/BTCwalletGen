@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Select } from 'antd';
+import { Select } from 'antd';
 
 import './BTCconvert.css';
 
@@ -17,12 +17,7 @@ class BTCconvert extends Component {
 
         this.handleCurrencyChange = this.handleCurrencyChange.bind(this);
         this.fetchTicker = this.fetchTicker.bind(this);
-
         this.fetchTicker(this.state.currency);
-
-        // this.tickerTimer = setInterval(() => {
-        //     this.fetchTicker(this.state.currency);
-        // }, 60000);
     }
 
     componentWillUnmount() {

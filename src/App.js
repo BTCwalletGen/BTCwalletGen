@@ -16,6 +16,7 @@ class App extends Component {
     this.state = {
       current: 'generate'
     }
+    console.log('🚀 Welcome to BCwalletGen.com 🚀')
   }
 
   menuHandler = (menuItem) => {

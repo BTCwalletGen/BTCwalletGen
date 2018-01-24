@@ -20,7 +20,7 @@ class AppHeader extends Component {
                 <Header>
                     <Row type="flex" justify="space-between">
                         <div className="logo">
-                            <img src={Logo} />
+                            <img src={Logo} alt="BTCwalletGen logo"/>
                         </div>
                         <BTCconvert></BTCconvert>
                     </Row>

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Modal, Button, Icon, Input } from 'antd';
 
-// import { MN } from '../../../constants';
-
 import { MNEMONICS_SAFETY_SENTENCES } from '../../constants';
-
-const { confirm } = Modal;
 
 class PassphraseCheckedModal extends Component {
     constructor(props) {
@@ -56,6 +52,7 @@ class PassphraseCheckedModal extends Component {
                         className={!cancelable ? 'plain': ''}
                         type={cancelable ? 'primary': ''}
                         size="large"
+                        style={{ display: !cancelable ? 'none': 'inline-block' }}
                         disabled={!cancelable}
                         onClick={this.handleCancel}
                     >

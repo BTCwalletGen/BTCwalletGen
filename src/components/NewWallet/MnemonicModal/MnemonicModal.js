@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
-import { Modal, Button, Icon, Input, message } from 'antd';
+import { Button, message } from 'antd';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import PassphraseCheckedModal from '../../Modals/PassphraseCheckedModal';
 
-const { confirm } = Modal;
-
 class MnemonicModal extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     handleDismiss = () => {
         this.props.setVisible(false, () => {
             this.props.handleDismiss();
         });
-    }
-
-    handleCancel = () => {
-        console.log('cancelled!');
     }
 
     handleCopy = () => {

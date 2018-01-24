@@ -1,31 +1,23 @@
 import React, { Component } from 'react';
-import { Input, Icon, Button, Spin } from 'antd';
+import { Spin } from 'antd';
 
 import Bip38Password from './Bip38Password';
 
 const bitcoin = require('bitcoinjs-lib');
-const bigi = require('bigi');
 const crypto = require('crypto');
-const bip39 = require('bip39');
 const bip38 = require('bip38');
 const wif = require('wif');
 
 class Bip38Creation extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            password: {active: true },
-            loading: false,
-        };
+        this.state = { loading: false };
     }
 
     handlePasswordEntered = (pwd) => {
         this.setState({
             loading: true
         }, this.genBip38Wallet(pwd));
-        //     console.log('new state,', this.state);
-        //     this.genBip38Wallet(pwd);
-        // });
     }
 
     genBip38Wallet = (pwd) => {
@@ -56,7 +48,7 @@ class Bip38Creation extends Component {
     }
 
     render() {
-        const { password, loading } = this.state;
+        const { loading } = this.state;
         return (
             <Spin tip="Encrypting..." spinning={loading} style={{zIndex: 10}} size="large" >
                 <Bip38Password style={{textAlign: 'center'}} onProceed={this.handlePasswordEntered} />

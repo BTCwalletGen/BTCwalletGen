@@ -22,7 +22,6 @@ class AppContent extends Component {
             //     break;
             default:
                 return <NewWallet className="printable" />;
-                break;
         }
     }
 

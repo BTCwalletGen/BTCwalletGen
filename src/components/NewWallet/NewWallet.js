@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Button, Icon, Row, Modal } from 'antd';
+import { Button, Icon, Row } from 'antd';
 import { setTimeout } from 'timers';
 
 import './NewWallet.css';
@@ -9,13 +9,10 @@ import WalletTicket from '../WalletTicket/WalletTicket';
 import PassphraseCheckedModal from '../Modals/PassphraseCheckedModal';
 import Bip38Creation from './Bip38/Bip38Creation';
 
-const { Content } = Layout;
 const bitcoin = require('bitcoinjs-lib');
-const bigi = require('bigi');
+// const bigi = require('bigi');
 const crypto = require('crypto');
 const bip39 = require('bip39');
-const bip38 = require('bip38');
-const wif = require('wif');
 
 class NewWallet extends Component {
     constructor() {
@@ -157,13 +154,13 @@ class NewWallet extends Component {
 
     handleNewBip38WalletResult = ({address, encryptedKey}) => {
         this.setState((prevState) => {
-            prevState.newWalletEngaged = false,
+            prevState.newWalletEngaged = false;
             prevState.newWalletState.bip38.active = false;
             prevState.newWalletState.result.active = true;
             prevState.wallet = {
                 type: 'bip38',
-                address,
                 key: encryptedKey,
+                address
             };
             return prevState;
         });

@@ -9,7 +9,6 @@ class AhrefButton extends Component {
     }
 
     initStyling = () => {
-        const possibleSizes = ['small', 'medium'];
         this.sizeIndex = this.props.size === 'small' ? 0 : 1;
 
         this.css = {
@@ -39,7 +38,7 @@ class AhrefButton extends Component {
                 style={{
                     ...this.css,
                     ...this.cssForSize[this.sizeIndex],
-                    ... (this.state.hover) ? this.cssHover : {}
+                    ...((this.state.hover) ? this.cssHover : {})
                 }}
                 onMouseEnter={() => this.hover(true)}
                 onMouseLeave={() => this.hover(false)}
